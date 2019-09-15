@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'src/assets/color-variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: $main-light-color;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    &::selection {
+        background-color: $main-light-color;
+    }
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, $main-dark-color 50%, $main-light-color);
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+.form {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    .form-input {
+        width: 100%;
+        background-color: transparent;
+        font-size: 50px;
+        border: 0;
+        height: 70px;
+        padding: 0 10px;
+        font-weight: bold;
+        border-bottom: 2px $main-light-color solid;
+        &::placeholder {
+            color: $main-lighter-color;
+        }
+    }
+}
+.btn {
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 1px $main-light-color solid;
+    color: $main-dark-color;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: $main-light-color;
+    height: 70px;
+}
+
+
+

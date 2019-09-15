@@ -1,0 +1,15 @@
+<div class="state">
+        <div class="form">
+            <h1 class="title">{{config.view.title}}</h1>
+            <p>{{config.view.text}}</p>
+            <form [formGroup]="form">
+                <input *ngFor="let control of config.controls" class="form-input"
+                    [formControlName]="control.name"
+                    [type]="control.type"
+                    [placeholder]="control.placeholder">
+                    <ng-container *ngFor="let button of config.buttons">
+                        <button class="btn" type="submit" (click)="formSubmit()">{{button.title}}</button>
+                    </ng-container>
+            </form>
+        </div>
+</div>
