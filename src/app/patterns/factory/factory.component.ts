@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FactoryForm } from './models/factory-form';
+import { FactoryForm } from './classes/factory-form.class';
 
 @Component({
   selector: 'app-factory',
@@ -7,11 +7,10 @@ import { FactoryForm } from './models/factory-form';
   styleUrls: ['./factory.component.scss']
 })
 export class FactoryComponent extends FactoryForm {
-  someOperation(creator) {
-    new creator();
-  }
-
-  public onSubmit(formSubmitPayload) {
-    console.log(formSubmitPayload);
+  public onSubmit({form, action}) {
+    const factory = new action();
+    
+    console.log(form);
+    console.log(factory.someOperation());
   }
 }

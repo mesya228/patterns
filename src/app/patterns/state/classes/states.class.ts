@@ -1,6 +1,6 @@
-import { State } from "./state";
+import { State } from "./state.class";
 import { Validators } from '@angular/forms';
-import { FormConfig } from '../../../shared/models/form-config';
+import { FormConfig } from 'shared/models/form-config';
 
 export class ConcreteStateA extends State {
   public config: FormConfig = {
@@ -14,7 +14,8 @@ export class ConcreteStateA extends State {
     ],
     buttons: [
       {
-        title: 'Next'
+        title: 'Next',
+        action: ConcreteStateB,
       }
     ],
     view: {
@@ -23,9 +24,9 @@ export class ConcreteStateA extends State {
     }
   }
 
-  public formSubmit(): void {
-    console.log('Form submit ConcreteStateA', this.context.form.value);
-    this.context.changeState(ConcreteStateB);
+  public formSubmit(payload: any): void {
+    console.log('Form submit ConcreteStateA', payload.form);
+    this.context.changeState(payload.action);
   }
 }
 
@@ -47,7 +48,8 @@ export class ConcreteStateB extends State {
     ],
     buttons: [
       {
-        title: 'Send'
+        title: 'Send',
+        action: ConcreteStateA,
       }
     ],
     view: {
@@ -56,8 +58,8 @@ export class ConcreteStateB extends State {
     }
   }
 
-  public formSubmit(): void {
-    console.log('Form submit ConcreteStateB', this.context.form.value);
-    this.context.changeState(ConcreteStateA);
+  public formSubmit(payload: any): void {
+    console.log('Form submit ConcreteStateB', payload.form);
+    this.context.changeState(payload.action);
   }
 }

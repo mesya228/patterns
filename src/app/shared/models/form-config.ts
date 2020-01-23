@@ -5,7 +5,7 @@ export abstract class FormConfig {
         name: string;
         type: string;
         placeholder: string;
-        validatorsSync: ValidatorFn[];
+        validatorsSync?: ValidatorFn[];
     }[];
     public buttons?: {
         title: string;

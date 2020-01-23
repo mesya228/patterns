@@ -1,4 +1,4 @@
-export abstract class  State {
+export abstract class State {
     protected context: any;
     public abstract config: any;
 
@@ -6,5 +6,5 @@ export abstract class  State {
         this.context = context;
     }
 
-    public abstract formSubmit(): void;
+    public abstract formSubmit(payload: any): void;
 }

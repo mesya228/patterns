@@ -1,4 +1,4 @@
-import { Product } from '../interfaces/product';
+import { Product } from '../interfaces/product.interface';
 
 export abstract class Creator {
     public abstract factoryMethod(): Product;
