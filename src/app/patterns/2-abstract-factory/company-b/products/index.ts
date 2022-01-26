@@ -1,2 +1,2 @@
-export { Product1 } from './product1.class';
-export { Product2 } from './product2.class';
+export { ProductB1 } from './product1.class';
+export { ProductB2 } from './product2.class';

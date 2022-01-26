@@ -3,18 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FactoryComponent } from './patterns/1-factory/factory.component';
+import {
+  FactoryComponent,
+  AbstractFactoryComponent,
+  BuilderComponent,
+  SingletonComponent,
+} from './patterns';
+import { PrototypeComponent } from './patterns/4-prototype/prototype.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FactoryComponent
+    FactoryComponent,
+    AbstractFactoryComponent,
+    BuilderComponent,
+    SingletonComponent,
+    PrototypeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
