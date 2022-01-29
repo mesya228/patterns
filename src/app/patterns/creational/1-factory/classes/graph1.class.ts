@@ -5,7 +5,7 @@ export class Graph1 extends GraphFactory {
     return new Graph1();
   }
 
-	public draw(data = []) {
-
+	public draw(data = []): string {
+    return 'Graph1 drawed';
 	}
 }

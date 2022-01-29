@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { GraphFactory } from './classes/factory.class';
 import { Graph1 } from './classes/graph1.class';
 import { Graph2 } from './classes/graph2.class';
 

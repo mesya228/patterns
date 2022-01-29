@@ -8,8 +8,12 @@ import {
   AbstractFactoryComponent,
   BuilderComponent,
   SingletonComponent,
+  PrototypeComponent,
+  AdapterComponent,
+  BridgeComponent,
 } from './patterns';
-import { PrototypeComponent } from './patterns/4-prototype/prototype.component';
+import { FacadeComponent } from './patterns/structural/facade/facade.component';
+import { DecoratorComponent } from './patterns/structural/decorator/decorator.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { PrototypeComponent } from './patterns/4-prototype/prototype.component';
     BuilderComponent,
     SingletonComponent,
     PrototypeComponent,
+    AdapterComponent,
+    BridgeComponent,
+    FacadeComponent,
+    DecoratorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
