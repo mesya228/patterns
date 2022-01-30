@@ -1,1 +1,15 @@
+<div class="links">
+	<div *ngFor="let type of patternTypes" class="type">
+		<h4>{{ type.title }}</h4>
+
+		<a
+			*ngFor="let pattern of type.patterns"
+			class="pattern"
+			[routerLink]="['/', pattern.title]"
+		>
+			<p>{{ pattern.title | titlecase }}</p>
+		</a>
+	</div>
+</div>
+
 <router-outlet></router-outlet>

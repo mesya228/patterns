@@ -7,14 +7,5 @@ export abstract class GraphFactory {
   protected abstract draw(): void;
 
   constructor() {
-    this.factoryMethod();
-  }
-
-  public initGraph() {
-    this.graph = this.factoryMethod();
-  }
-
-  public drawGraph(data = []) {
-    this.graph?.draw(data);
   }
 }

@@ -6,6 +6,6 @@ export class Graph2 extends GraphFactory {
   }
 
   public draw(data = []): string {
-    return 'Graph1 drawed';
+    return 'Graph2 drawed';
   }
 }

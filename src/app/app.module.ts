@@ -11,9 +11,11 @@ import {
   PrototypeComponent,
   AdapterComponent,
   BridgeComponent,
+  FacadeComponent,
+  DecoratorComponent,
+  FlyweightComponent,
+  ProxyComponent
 } from './patterns';
-import { FacadeComponent } from './patterns/structural/facade/facade.component';
-import { DecoratorComponent } from './patterns/structural/decorator/decorator.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { DecoratorComponent } from './patterns/structural/decorator/decorator.co
     BridgeComponent,
     FacadeComponent,
     DecoratorComponent,
+    FlyweightComponent,
+    ProxyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

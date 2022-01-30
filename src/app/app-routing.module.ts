@@ -10,6 +10,8 @@ import {
   SingletonComponent,
   BridgeComponent,
   DecoratorComponent,
+  FlyweightComponent,
+  ProxyComponent,
 } from './patterns';
 
 const routes: Routes = [
@@ -50,6 +52,14 @@ const routes: Routes = [
   {
     path: 'decorator',
     component: DecoratorComponent,
+  },
+  {
+    path: 'flyweight',
+    component: FlyweightComponent,
+  },
+  {
+    path: 'proxy',
+    component: ProxyComponent,
   },
   {
     path: '**',
