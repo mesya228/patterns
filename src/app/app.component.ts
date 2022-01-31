@@ -26,6 +26,12 @@ export class AppComponent {
       { title: 'flyweight' },
       { title: 'proxy' },
     ] },
-    { title: 'behavioral', patterns: [{ title: '' }] },
+    { title: 'behavioral', patterns: [
+      { title: 'chain' },
+      { title: 'command' },
+      { title: 'iterator' },
+      { title: 'mediator' },
+      { title: 'observer' },
+    ] },
   ];
 }

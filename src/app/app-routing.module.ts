@@ -12,6 +12,9 @@ import {
   DecoratorComponent,
   FlyweightComponent,
   ProxyComponent,
+  CompositeComponent,
+  ChainComponent,
+  IteratorComponent,
 } from './patterns';
 
 const routes: Routes = [
@@ -60,6 +63,19 @@ const routes: Routes = [
   {
     path: 'proxy',
     component: ProxyComponent,
+  },
+  {
+    path: 'composite',
+    component: CompositeComponent,
+  },
+  // Behavioral
+  {
+    path: 'chain',
+    component: ChainComponent,
+  },
+  {
+    path: 'iterator',
+    component: IteratorComponent,
   },
   {
     path: '**',

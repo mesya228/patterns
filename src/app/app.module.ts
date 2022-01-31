@@ -14,8 +14,11 @@ import {
   FacadeComponent,
   DecoratorComponent,
   FlyweightComponent,
-  ProxyComponent
+  ProxyComponent,
+  CompositeComponent,
+  ChainComponent,
 } from './patterns';
+import { IteratorComponent } from './patterns/behavioral/iterator/iterator.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import {
     DecoratorComponent,
     FlyweightComponent,
     ProxyComponent,
+    CompositeComponent,
+    ChainComponent,
+    IteratorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
