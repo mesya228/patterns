@@ -10,11 +10,19 @@ import { Graph2 } from './classes/graph2.class';
 export class FactoryComponent implements OnInit {
   public graph1Text: string;
   public graph2Text: string;
-  constructor() {}
+
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
+    this.setGraphs();
+  }
+
+  public setGraphs() {
     const graph1 = new Graph1();
     this.graph1Text = graph1.draw([]);
+
     const graph2 = new Graph2();
     this.graph2Text = graph2.draw([]);
   }

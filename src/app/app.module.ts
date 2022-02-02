@@ -17,8 +17,12 @@ import {
   ProxyComponent,
   CompositeComponent,
   ChainComponent,
+  IteratorComponent,
+  CommandComponent,
+  StrategyComponent,
+  StateComponent,
 } from './patterns';
-import { IteratorComponent } from './patterns/behavioral/iterator/iterator.component';
+import { TemplateComponent } from './patterns/behavioral/template/template.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +41,10 @@ import { IteratorComponent } from './patterns/behavioral/iterator/iterator.compo
     CompositeComponent,
     ChainComponent,
     IteratorComponent,
+    CommandComponent,
+    StrategyComponent,
+    StateComponent,
+    TemplateComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

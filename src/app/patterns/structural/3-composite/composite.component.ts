@@ -10,7 +10,9 @@ import { Leaf } from './classes/leaf.class';
 export class CompositeComponent implements OnInit {
   public compositeText: string;
 
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     const tree = new Composite();

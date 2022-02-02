@@ -10,7 +10,9 @@ import { Service1 } from './classes/service1.service';
 export class FacadeComponent implements OnInit {
   public text: string;
 
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     const s1 = new Service1();

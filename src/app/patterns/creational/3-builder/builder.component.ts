@@ -10,7 +10,9 @@ import { FormatBuilder } from './classes/format-builder.class';
 export class BuilderComponent implements OnInit {
   public formattedString: string = '';
 
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     const builder = new FormatBuilder('test');

@@ -11,7 +11,9 @@ export class ProxyComponent implements OnInit {
   public proxyServiceText: string;
   public proxyText: string;
 
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     const proxyService = new ProxyService();

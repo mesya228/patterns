@@ -7,7 +7,9 @@ import { FlyweightFactory } from './classes/flyweight-factory.class';
   styleUrls: ['./flyweight.component.scss'],
 })
 export class FlyweightComponent implements OnInit {
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     const factory = new FlyweightFactory([

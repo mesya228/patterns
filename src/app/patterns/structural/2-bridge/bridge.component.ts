@@ -12,7 +12,9 @@ export class BridgeComponent implements OnInit {
   public implementation1: string;
   public implementation2: string;
 
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     let implementation = new Implementation1();

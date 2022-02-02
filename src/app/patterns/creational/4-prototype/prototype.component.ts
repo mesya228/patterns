@@ -7,7 +7,9 @@ import { ComponentWithBackReference, Prototype } from './classes';
   styleUrls: ['./prototype.component.scss'],
 })
 export class PrototypeComponent implements OnInit {
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     const proto1 = new Prototype();

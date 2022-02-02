@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 
 import { AbstractFactoryComponent } from './abstract-factory.component';
 
@@ -22,4 +22,11 @@ describe('AbstractFactoryComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should get products', fakeAsync(() => {
+    component.getProducts();
+
+    tick(1000);
+    expect(component.productA1).toEqual('ProductA1');
+  }));
 });

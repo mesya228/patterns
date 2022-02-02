@@ -9,7 +9,9 @@ import { Singleton } from './singleton.class';
 export class SingletonComponent implements OnInit {
   public text: string;
 
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     const s1 = Singleton.getInstance();

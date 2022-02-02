@@ -1,7 +1,9 @@
 export class Singleton {
   private static instance: Singleton;
 
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   public static getInstance(): Singleton {
     if (!this.instance) {

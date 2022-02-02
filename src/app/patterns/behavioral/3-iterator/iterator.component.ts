@@ -9,7 +9,10 @@ import { WordsCollection } from './classes/words-collection.class';
 export class IteratorComponent implements OnInit {
   public iteratorText: string = '';
   public reverseIteratorText: string = '';
-  constructor() {}
+
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     const collection = new WordsCollection();

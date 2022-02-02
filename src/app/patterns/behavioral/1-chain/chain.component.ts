@@ -18,7 +18,9 @@ export class ChainComponent implements OnInit {
   public passedComplexText: boolean;
   public faildedComplexText: boolean;
 
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     const handlers = [
@@ -35,17 +37,47 @@ export class ChainComponent implements OnInit {
       return handler;
     }, null);
 
-    this.passedHackText = handlers[0].handle({ type: 'Hack', content: {login: 'test', password: 'qwerty123'} });
-    handlers[0].handle({ type: 'Hack', content: {login: 'test', password: 'qwerty123'} });
-    handlers[0].handle({ type: 'Hack', content: {login: 'test', password: 'qwerty123'} });
-    handlers[0].handle({ type: 'Hack', content: {login: 'test', password: 'qwerty123'} });
-    handlers[0].handle({ type: 'Hack', content: {login: 'test', password: 'qwerty123'} });
-    this.faildedHackText = handlers[0].handle({ type: 'Hack', content: {login: 'test', password: 'qwerty123'} });
+    this.passedHackText = handlers[0].handle({
+      type: 'Hack',
+      content: { login: 'test', password: 'qwerty123' },
+    });
+    handlers[0].handle({
+      type: 'Hack',
+      content: { login: 'test', password: 'qwerty123' },
+    });
+    handlers[0].handle({
+      type: 'Hack',
+      content: { login: 'test', password: 'qwerty123' },
+    });
+    handlers[0].handle({
+      type: 'Hack',
+      content: { login: 'test', password: 'qwerty123' },
+    });
+    handlers[0].handle({
+      type: 'Hack',
+      content: { login: 'test', password: 'qwerty123' },
+    });
+    this.faildedHackText = handlers[0].handle({
+      type: 'Hack',
+      content: { login: 'test', password: 'qwerty123' },
+    });
 
-    this.passedLengthText = handlers[0].handle({ type: 'Length', content: 'testtest' });
-    this.faildedLengthHackText = handlers[0].handle({ type: 'Length', content: 'test' });
+    this.passedLengthText = handlers[0].handle({
+      type: 'Length',
+      content: 'testtest',
+    });
+    this.faildedLengthHackText = handlers[0].handle({
+      type: 'Length',
+      content: 'test',
+    });
 
-    this.passedComplexText = handlers[0].handle({ type: 'Complex', content: 'testTEST' });
-    this.faildedComplexText = handlers[0].handle({ type: 'Complex', content: '55' });
+    this.passedComplexText = handlers[0].handle({
+      type: 'Complex',
+      content: 'testTEST',
+    });
+    this.faildedComplexText = handlers[0].handle({
+      type: 'Complex',
+      content: '55',
+    });
   }
 }

@@ -11,7 +11,9 @@ export class AdapterComponent implements OnInit {
   public s2: string;
   public adapter: string;
 
-  constructor() {}
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
     const s1 = new Service1();

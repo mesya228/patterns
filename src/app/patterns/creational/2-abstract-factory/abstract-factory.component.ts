@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
+import { take } from 'rxjs/operators';
 import { CompanyAFactory } from './company-a/company-a-factory.class.ts';
 import { CompanyBFactory } from './company-b/company-b-factory.class';
 
@@ -8,15 +10,32 @@ import { CompanyBFactory } from './company-b/company-b-factory.class';
   styleUrls: ['./abstract-factory.component.scss'],
 })
 export class AbstractFactoryComponent implements OnInit {
-  constructor() {}
+  public productA1: string;
+  public productA2: string;
+  public productB1: string;
+  public productB2: string;
+
+  constructor() {
+    console.clear();
+  }
 
   ngOnInit(): void {
-    const productA = new CompanyAFactory();
-    productA.createProduct1();
-    productA.createProduct2();
+    this.getProducts();
+  }
 
+  public getProducts() {
+    const productA = new CompanyAFactory();
     const productB = new CompanyBFactory();
-    productB.createProduct1();
-    productB.createProduct2();
+
+    timer(1000)
+      .pipe(take(1))
+      .subscribe(() => {
+        this.productA1 = productA.createProduct1().getProduct();
+        console.log(this.productA1);
+        this.productA2 = productA.createProduct2().getProduct();
+
+        this.productB1 = productB.createProduct1().getProduct();
+        this.productB2 = productB.createProduct2().getProduct();
+      });
   }
 }

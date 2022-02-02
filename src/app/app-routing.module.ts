@@ -15,6 +15,9 @@ import {
   CompositeComponent,
   ChainComponent,
   IteratorComponent,
+  CommandComponent,
+  StateComponent,
+  StrategyComponent,
 } from './patterns';
 
 const routes: Routes = [
@@ -76,6 +79,22 @@ const routes: Routes = [
   {
     path: 'iterator',
     component: IteratorComponent,
+  },
+  {
+    path: 'command',
+    component: CommandComponent,
+  },
+  {
+    path: 'state',
+    component: StateComponent,
+  },
+  {
+    path: 'strategy',
+    component: StrategyComponent,
+  },
+  {
+    path: 'strategy',
+    component: StrategyComponent,
   },
   {
     path: '**',
