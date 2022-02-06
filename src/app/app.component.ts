@@ -32,6 +32,10 @@ export class AppComponent {
       { title: 'iterator' },
       { title: 'mediator' },
       { title: 'observer' },
+      { title: 'strategy' },
+      { title: 'memento' },
+      { title: 'template' },
+      { title: 'visitor' },
     ] },
   ];
 }

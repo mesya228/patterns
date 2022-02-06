@@ -18,6 +18,10 @@ import {
   CommandComponent,
   StateComponent,
   StrategyComponent,
+  MediatorComponent,
+  MementoComponent,
+  TemplateComponent,
+  VisitorComponent,
 } from './patterns';
 
 const routes: Routes = [
@@ -93,8 +97,20 @@ const routes: Routes = [
     component: StrategyComponent,
   },
   {
-    path: 'strategy',
-    component: StrategyComponent,
+    path: 'template',
+    component: TemplateComponent,
+  },
+  {
+    path: 'mediator',
+    component: MediatorComponent,
+  },
+  {
+    path: 'memento',
+    component: MementoComponent,
+  },
+  {
+    path: 'visitor',
+    component: VisitorComponent,
   },
   {
     path: '**',

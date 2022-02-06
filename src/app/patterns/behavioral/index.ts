@@ -1,3 +1,7 @@
+export { VisitorComponent } from './visitor/visitor.component';
+export { TemplateComponent } from './template/template.component';
+export { MediatorComponent } from './mediator/mediator.component';
+export { MementoComponent } from './memento/memento.component';
 export { StrategyComponent } from './strategy/strategy.component';
 export { CommandComponent } from './command/command.component';
 export { StateComponent } from './state/state.component';

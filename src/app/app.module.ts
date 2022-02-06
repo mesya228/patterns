@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {
@@ -21,8 +21,11 @@ import {
   CommandComponent,
   StrategyComponent,
   StateComponent,
+  TemplateComponent,
+  MediatorComponent,
+  MementoComponent,
 } from './patterns';
-import { TemplateComponent } from './patterns/behavioral/template/template.component';
+import { VisitorComponent } from './patterns/behavioral/visitor/visitor.component';
 
 @NgModule({
   declarations: [
@@ -45,8 +48,11 @@ import { TemplateComponent } from './patterns/behavioral/template/template.compo
     StrategyComponent,
     StateComponent,
     TemplateComponent,
+    MediatorComponent,
+    MementoComponent,
+    VisitorComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
