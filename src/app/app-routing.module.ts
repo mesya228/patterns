@@ -23,6 +23,7 @@ import {
   TemplateComponent,
   VisitorComponent,
 } from './patterns';
+import { TreeParentComponent } from './tree-components';
 
 const routes: Routes = [
   // Creational
@@ -111,6 +112,11 @@ const routes: Routes = [
   {
     path: 'visitor',
     component: VisitorComponent,
+  },
+  // TREE
+  {
+    path: 'tree-parent',
+    component: TreeParentComponent,
   },
   {
     path: '**',

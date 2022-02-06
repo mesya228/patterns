@@ -1,11 +1,21 @@
 body {
-	background: rgb(44, 44, 44);
+	background: #2c2c2c;
 	text-align: center;
 	font-size: 2vw;
-	color: rgb(123, 78, 207);
+	color: #7b4ecf;
 	font-family: sans-serif;
 
 	a {
-		color: rgb(104, 68, 172);
+		color: #6844ac;
 	}
+}
+
+
+button {
+	background: #3a3a3a;
+	color: #7b4ecf;
+	border: none;
+	border-radius: 4px;
+	padding: 5px;
+	cursor: pointer;
 }

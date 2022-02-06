@@ -1,0 +1,10 @@
+<div
+	[@updateView]="updateView"
+	(@updateView.done)="animationDone()"
+	class="child-b"
+>
+	<p>{{ name }}</p>
+	<p>{{ data.desc }}</p>
+
+	<button (click)="updateChild()">Update child</button>
+</div>

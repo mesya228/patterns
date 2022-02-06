@@ -1,0 +1,27 @@
+<div class="parent">
+	<h2>Parent</h2>
+
+	<app-tree-child-a
+		[data]="dataA"
+		[name]="nameA"
+	>
+	</app-tree-child-a>
+	<br>
+	<app-tree-child-b
+		[data]="dataB"
+		[name]="nameB"
+	>
+	</app-tree-child-b>
+
+	<div class="buttons">
+		<button (click)="changeAName()">Child A name</button>
+		<button (click)="changeAData()">Child A data</button>
+		<button (click)="replaceAData()">Child A replace data</button>
+
+		<br>
+
+		<button (click)="changeBName()">Child B name</button>
+		<button (click)="changeBData()">Child B data</button>
+		<button (click)="replaceBData()">Child B replace data</button>
+	</div>
+</div>

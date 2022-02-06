@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import { Component1 } from './classes/component1.class';
 import { Component2 } from './classes/component2.class';
 import { Visitor1 } from './classes/visitor1.class';
@@ -10,7 +11,7 @@ import { Visitor2 } from './classes/visitor2.class';
   styleUrls: ['./visitor.component.scss'],
 })
 export class VisitorComponent implements OnInit {
-  constructor() {}
+  constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
     const components = [new Component1(), new Component2()];
