@@ -1,0 +1,18 @@
+{
+    "baseUrl": "http://localhost:4200/",
+    "fileServerFolder": ".",
+    "fixturesFolder": "./fixtures",
+    "integrationFolder": "./integration",
+    "pluginsFile": false,
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/results-[hash].xml"
+    },
+    "supportFile": false,
+    "video": false,
+    "screenshotsFolder": "./screenshots",
+    "chromeWebSecurity": false,
+    "viewportWidth": 1280,
+    "viewportHeight": 800,
+    "numTestsKeptInMemory": 5
+}

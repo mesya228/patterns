@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.json",
+  "include": ["**/*.ts", "plugins/index.ts"],
+  "exclude": [],
+  "compilerOptions": {
+    "sourceMap": false,
+    "types": ["cypress"],
+    "lib": ["es6", "dom"],
+    "isolatedModules": false,
+    "allowJs": false,
+    "noEmit": true
+  }
+}
