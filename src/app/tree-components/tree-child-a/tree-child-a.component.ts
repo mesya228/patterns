@@ -44,6 +44,16 @@ export class TreeChildAComponent implements OnInit, OnChanges {
   @Input() public data: any;
   @Input() public name: string;
 
+  get getName() {
+    this.updateView = true;
+    return this.name;
+  }
+
+  get getData() {
+    this.updateView = true;
+    return this.data;
+  }
+
   public updateView: boolean;
 
   constructor(private cd: ChangeDetectorRef) {}
@@ -56,7 +66,6 @@ export class TreeChildAComponent implements OnInit, OnChanges {
   }
 
   public updateChild() {
-    this.cd.markForCheck();
     this.cd.detectChanges();
   }
 

@@ -36,4 +36,7 @@ export class TreeParentComponent implements OnInit {
   public replaceBData() {
     this.dataB = { desc: this.dataB.desc + ' 1' };
   }
+  public detectChanges() {
+    this.cd.detectChanges();
+  }
 }
